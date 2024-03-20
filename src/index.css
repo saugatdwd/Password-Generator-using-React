@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  min-height: 50px;
+  max-width: 200px;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 15px;
+  border: 0.5px solid rgb(184, 236, 104);
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+
+.button--submit {
+  min-height: 50px;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #5e4dcd;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+  background-color: #5e5dcd;
+}
+
+.input:focus, .input:focus-visible {
+  border-color: #3898EC;
+  outline: none;
+}
+
+.background {
+  background-color: #2c2c2b;
+  height: 100vh;
+}
+.input-field{
+  position: relative;
+  background-color: #525150;
+  top: 40vh;
+  border: none !important;
+}
+
+
+.Btn {
+  width: 120px;
+  height: 45px;
+  background-color: rgb(65, 64, 64);
+  border: none;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.342);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .5s;
+}
+
+.text {
+  color: rgb(184, 236, 104);
+  font-weight: 800;
+  letter-spacing: 1.1px;
+  z-index: 2;
+}
+
+.svgIcon {
+  z-index: 2;
+}
+
+.svgIcon path {
+  fill: rgb(184, 236, 104);
+}
+
+.Btn:hover {
+  color: rgb(230, 255, 193);
+}
+
+.effect {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(184, 236, 104);
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition-duration: .5s;
+}
+
+.Btn:hover .effect {
+  transform: scale(15);
+  transform-origin: center;
+  opacity: 1;
+  transition-duration: .5s;
+}
+
+.Btn:hover {
+  box-shadow: 0px 0px 5px rgb(184, 236, 104),
+  0px 0px 10px rgb(184, 236, 104),
+  0px 0px 30px rgb(184, 236, 104);
+  transition-duration: .7s;
+}
+
+.Btn:hover .text {
+  color: rgb(65, 64, 64);
+}
+
+.Btn:hover .svgIcon path {
+  fill: rgb(65, 64, 64);
+}
